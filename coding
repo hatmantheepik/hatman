@@ -1,10 +1,8 @@
-local screen = GetPartFromPort(1,"screen")
-screen:ClearElements()
-screen:CreateElement("TextLabel", {
-Text="hi"
-TextScaled=true
-size=udiim2.fromscale(1,1)
-position=udim2.fromscale(0,0)})
-
-
-  
+local screen = GetPartFromPort(1, "Screen") --Gets the screen
+screen:ClearElements() --clears the screen of any previous elements
+screen:CreateElement("TextLabel", {  -- creates an element with the given name and properties
+Text = "Hi!", --Sets the text to Hi!
+TextScaled = true, -- Automatically scales the text to fit the screen
+Size = UDim2.fromScale(1, 1), --Makes the size cover the whole screen
+Position = UDim2.fromScale(0, 0) --sets the position
+})
