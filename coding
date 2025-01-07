@@ -1,6 +1,6 @@
 local screen = GetPartFromPort(1,"screen")
 screen:ClearElements()
-screen:CreateElement("TextLabel", {
+screen:CreateElement("TextLabel", {}
 Text="hi"
   TextScaled=true
-  })
+  )
