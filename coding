@@ -1,6 +1,10 @@
 local screen = GetPartFromPort(1,"screen")
 screen:ClearElements()
-screen:CreateElement("TextLabel", {Text="hi" TextScaled=true})
+screen:CreateElement("TextLabel", {
+Text="hi"
+TextScaled=true
+size=udiim2.fromscale(1,1)
+position=udim2.fromscale(0,0)})
 
 
   
